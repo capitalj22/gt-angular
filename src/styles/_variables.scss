@@ -1,0 +1,55 @@
+$color-gray-50: #f3f3f3;
+$color-gray-100: #e3e3e3;
+$color-gray-400: #5d5d5d;
+
+$color-background-secondary: $color-gray-50;
+
+$nav-button-color: #00838F;
+
+$bp-xs: "(min-width: 480px)";
+$bp-sm: "(min-width: 768px)";
+$bp-md: "(min-width: 992px)";
+$bp-lg: "(min-width: 1200px)";
+
+@mixin default-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+
+    @media #{$bp-xs} {
+        grid-gap: 2rem;
+    }
+
+    @media #{$bp-sm} {
+        grid-gap: 2rem;
+    }
+
+    @media #{$bp-md} {
+        grid-gap: 4rem;
+    }
+
+    @media #{$bp-lg} {
+        grid-gap: 4rem;
+    }
+}
+
+@mixin default-grid-item {
+
+    grid-row: span 6;
+    grid-column: span 6;
+
+    @media #{$bp-sm} {
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+
+    @media #{$bp-md} {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    @media #{$bp-lg} {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+}

@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "name": "Gubernatorial Trail",
+        "splash": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "activities": [
+            "bike",
+            "hike",
+            "history"
+        ],
+        "stats": [
+            {
+                "statistic": "distanceInMiles",
+                "value": "1.3 mi"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Egomaniacal Pass",
+        "splash": "Sed ut perspiciatis unde omnis iste natus error.",
+        "activities": [
+            "bike",
+            "hike",
+            "history"
+        ],
+        "stats": [
+            {
+                "statistic": "distanceInMiles",
+                "value": "24 mi"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "The Slags",
+        "splash": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni. dolores eos qui ratione voluptatem sequi nesciunt.",
+        "activities": [
+            "bike",
+            "hike",
+            "water"
+        ],
+        "stats": [
+            {
+                "statistic": "distanceInMiles",
+                "value": "2 days"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Mt. Rhino",
+        "splash": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia voluptatem1",
+        "activities": [
+            "history",
+            "hike",
+            "culture"
+        ],
+        "stats": [
+            {
+                "statistic": "distanceInMiles",
+                "value": 1.3
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Eastern Valley Trail",
+        "splash": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+        "activities": [
+            "history",
+            "culture"
+        ],
+        "stats": [
+            {
+                "statistic": "distanceInMiles",
+                "value": 1.3
+            }
+        ]
+    }
+]

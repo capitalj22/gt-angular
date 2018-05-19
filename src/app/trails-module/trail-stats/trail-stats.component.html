@@ -1,0 +1,12 @@
+<div *ngIf="showAll">
+    <span *ngFor="let stat of stats">
+        {{stat}}
+    </span>
+</div>
+
+<div *ngIf="!showAll">
+    <span>
+        {{stats[0].value}}
+    </span>
+</div>
+

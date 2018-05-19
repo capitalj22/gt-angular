@@ -1,0 +1,23 @@
+<div 
+    class="trail-card-top" 
+    [style.background-image]="cssUrl">
+</div>
+<div class="trail-card-middle">
+    <div class="trail-name">
+        {{name}}
+    </div>
+    <div class="trail-splash">
+        {{splash}}
+    </div>
+</div>
+<div class="trail-card-bottom">
+    <trail-activities
+        class="trail-activities"
+        [activities]="activities">
+    </trail-activities>
+    <trail-stats
+        class="trail-stats"
+        [stats]="stats"
+        [showAll]="false">
+    </trail-stats>
+</div>

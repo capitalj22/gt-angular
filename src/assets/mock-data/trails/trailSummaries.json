@@ -13,6 +13,11 @@
                 "statistic": "distanceInMiles",
                 "value": "1.3 mi"
             }
+        ],
+        "tags": [
+            "cool",
+            "neato",
+            "funzo"
         ]
     },
     {
@@ -29,6 +34,11 @@
                 "statistic": "distanceInMiles",
                 "value": "24 mi"
             }
+        ],
+        "tags": [
+            "cool",
+            "neato",
+            "funzo"
         ]
     },
     {
@@ -45,6 +55,11 @@
                 "statistic": "distanceInMiles",
                 "value": "2 days"
             }
+        ],
+        "tags": [
+            "cool",
+            "neato",
+            "funzo"
         ]
     },
     {
@@ -61,6 +76,11 @@
                 "statistic": "distanceInMiles",
                 "value": 1.3
             }
+        ],
+        "tags": [
+            "neato",
+            "funzo",
+            "nature"
         ]
     },
     {
@@ -76,6 +96,11 @@
                 "statistic": "distanceInMiles",
                 "value": 1.3
             }
+        ],
+        "tags": [
+            "cool",
+            "neato",
+            "funzo"
         ]
     }
 ]

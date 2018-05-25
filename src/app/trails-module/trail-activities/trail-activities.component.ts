@@ -17,6 +17,7 @@ export class TrailActivitiesComponent implements OnInit {
     activityIcons: any;
 
     @Input() activities: [string];
+    @Input() activityCallback: Function;
 
     ngOnInit() {
         this.activityIcons = _.map(this.activities, activity => {

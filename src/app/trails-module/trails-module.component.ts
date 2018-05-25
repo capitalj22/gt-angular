@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'trails-module',
   template: `
-    Trails:
-  
-    <trail-list></trail-list>
+    <trails-page></trails-page>
   `,
 })
 export class TrailsModuleComponent implements OnInit {

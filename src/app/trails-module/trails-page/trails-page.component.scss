@@ -1,0 +1,14 @@
+trails-page:host {
+    background: rgba(0,0,0,0.4);
+    display: grid;
+    grid-template-columns: 0.25fr repeat(12, 1fr) 0.25fr;
+
+    trail-filter {
+        grid-column: 4 / 12;
+        margin: 2rem 0;
+    }
+
+    trail-list {
+        grid-column: 2 / 14;
+    }
+}

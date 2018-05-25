@@ -1,12 +1,25 @@
 @import "~styles/variables";
+@import "~styles/textures";
 
 trail-card:host {
     @include default-grid-item;
-    background: $color-background-secondary;
+
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    background: $color-background-secondary;   
     text-align: center;
 
-    img {
-        max-width: 100%;
+    .trail-card__overlay {
+        @include funky;
+
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        z-index: 4;
     }
 
     .trail-name {
@@ -16,13 +29,16 @@ trail-card:host {
     }
 
     .trail-card-top {
-        height: 28rem;
+        transition: 0.1s;
+        height: 24rem;
         background-position: center;
         background-size: cover;
      }
 
 
     .trail-splash {
+        transition: 0.1s;
+        display: block;
         font-size: 1.4rem;
         font-style: italic;
         color: $color-gray-400;
@@ -31,22 +47,48 @@ trail-card:host {
     }
 
     .trail-card-bottom {
+        transition: 0.1s;
         display: flex;
         height: 3rem;
         padding: 0.5rem;
-        display: flex;
         justify-content: space-between;
         color: $color-gray-400;
         background: $color-gray-100;
     }
     
     .trail-card-middle {
-        height: 12rem;
+        transition: 0.1s;
+        position: relative;
+        z-index: 5;
+        height: 16rem;
     }
 
     .trail-stats {
         display: flex;
         align-items: center;
         padding: 0 2rem;
+    }
+
+    &:hover {
+
+        .trail-card__overlay {
+            transition: 1s;
+            opacity: 0.2;
+        }
+        
+        .trail-card-middle {
+            transition: 1s;
+            height: auto;
+        }
+
+        .trail-splash {
+            display: none;
+            transition: 0.2s;
+        }
+
+        .trail-card-top {
+            transition: 1s;
+            height: 100%;
+        }
     }
 }

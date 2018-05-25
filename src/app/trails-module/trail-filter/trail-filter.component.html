@@ -1,0 +1,14 @@
+
+<div class="trail-filter__activities">
+  <div *ngFor="let activity of activities" class="trail-filter__activity">
+      <span class="trail-filter__activity-desc">{{activity.desc}}</span>
+      <span class="trail-filter__activity-icon fa {{activity.iconClass}}"></span>
+  </div>
+</div>
+<hr />
+<div class="trail-filter__tags">
+  <div class="tags">
+    <span class="trail-filter__tag"> All </span>
+    <span class="trail-filter__tag trail-filter__add-tags"> <span class="fa fa-plus"></span> Add Tags </span>
+  </div>
+</div>

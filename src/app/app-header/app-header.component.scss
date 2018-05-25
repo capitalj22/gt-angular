@@ -1,0 +1,39 @@
+@import '~styles/variables';
+
+app-header:host {
+    display: flex;
+    height: 6rem;
+    width: 100%;
+    background: $color-gray-50;
+
+    a,
+    a:hover,
+    a:active {
+        text-decoration: none;
+    }
+
+    a {
+        width: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &:hover {
+            background: $color-gray-100;
+        }
+
+        &.active {
+            background: $color-gray-100;
+        }
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+        font-size: 2.4rem;
+        font-family: $font-serif;
+        color: $color-brand-primary-hover;
+    }
+}

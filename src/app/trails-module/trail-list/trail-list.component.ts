@@ -22,5 +22,9 @@ export class TrailListComponent implements OnInit {
         this.trailsService.getTrailSummaries().subscribe(data => {
             this.trails = data;
         });
+
+        this.trailsService.getTrails().subscribe(data => {
+            console.log(data);
+        })
     }
 }

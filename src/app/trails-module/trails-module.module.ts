@@ -4,11 +4,12 @@ import { RouterModule } from '@angular/router';
 
 import { routes } from './trails-module.routes';
 import { TrailsModuleComponent } from './trails-module.component';
+import { TrailsPageComponent } from './trails-page';
 import { TrailCardComponent } from './trail-card';
 import { TrailListComponent } from './trail-list';
 import { TrailActivitiesComponent } from './trail-activities';
 import { TrailStatsComponent } from './trail-stats';
-
+import { TrailFilterComponent } from './trail-filter';
 import { TrailsService } from './trails.service';
 
 /*
@@ -21,7 +22,9 @@ import { TrailsService } from './trails.service';
     TrailStatsComponent,
     TrailsModuleComponent,
     TrailCardComponent,
-    TrailListComponent 
+    TrailListComponent ,
+    TrailFilterComponent,
+    TrailsPageComponent
   ],
   providers: [
     TrailsService

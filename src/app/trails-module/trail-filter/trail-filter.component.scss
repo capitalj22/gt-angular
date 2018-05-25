@@ -1,0 +1,47 @@
+@import '~styles/variables';
+
+trail-filter:host {
+    padding: 2rem;
+    background: rgba(0,0,0,0.3);
+
+    .trail-filter__activities {
+        display: flex;
+    }
+    
+    .trail-filter__activity {
+        background: $color-white;
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.8rem;
+        margin: 0.5rem;
+        color: $color-text-dark;
+        
+        .trail-filter__activity-icon {
+            color: $color-action;
+        }
+    }
+
+    .trail-filter__tags {
+        display: flex;
+    }
+
+    .trail-filter__tag {
+        cursor: pointer;
+        background: $color-white;
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.8rem;
+        margin: 0.5rem;
+        color: $color-action;
+
+        &:hover {
+            background: $color-action-hover;
+            color: $color-white;
+        }
+
+        &.trail-filter__add-tags {
+            background-color: rgba(0,0,0,0.1);
+            color: white;
+        }
+    }
+}

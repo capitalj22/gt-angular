@@ -1,0 +1,25 @@
+$texture-funky: url("~assets/img/funky-lines.png");
+$texture-diamond: url("~assets/img/diamond_upholstery.png");
+$texture-hex: url("~assets/img/hexellence.png");
+$texture-gplay: url("~assets/img/gplaypattern.png");
+$texture-grunge: url("~assets/img/subtle_grunge.png");
+
+@mixin grunge {
+    background-image: $texture-grunge;
+}
+
+@mixin diamond {
+    background-image: $texture-diamond;
+}
+
+@mixin hex {
+    background-image: $texture-hex;
+}
+
+@mixin gplay {
+    background-image: $texture-gplay;
+}
+
+@mixin funky {
+    background-image: $texture-funky;
+}

@@ -13,29 +13,13 @@ import { AppState } from './app.service';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
-    './app.component.css'
+    './app.component.scss'
   ],
   template: `
-    <nav>
-      <a [routerLink]=" ['./'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Index
-      </a>
-      <a [routerLink]=" ['./home'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Home
-      </a>
-      <a *ngIf="showDevModule" [routerLink]=" ['./trails-module'] "
-         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Trails
-      </a>
-    </nav>
-
     <main>
+      <app-header></app-header>
       <router-outlet></router-outlet>
     </main>
-
-    <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
   `
 })
 export class AppComponent implements OnInit {
@@ -55,6 +39,24 @@ export class AppComponent implements OnInit {
 
 }
 
+// <nav>
+//       <a [routerLink]=" ['./'] "
+//         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+//         Index
+//       </a>
+//       <a [routerLink]=" ['./home'] "
+//         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+//         Home
+//       </a>
+//       <a *ngIf="showDevModule" [routerLink]=" ['./trails-module'] "
+//          routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+//         Trails
+//       </a>
+//     </nav>
+
+//     <main>
+//       <router-outlet></router-outlet>
+//     </main>
 /**
  * Please review the https://github.com/AngularClass/angular2-examples/ repo for
  * more angular app examples that you may copy/paste

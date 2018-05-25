@@ -1,0 +1,27 @@
+@import '~styles/variables';
+@import '~styles/textures';
+
+html, body{
+  height: 100%;
+  font-family: $font-sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+main {
+  @include grunge;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
